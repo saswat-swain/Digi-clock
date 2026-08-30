@@ -37,3 +37,20 @@ function showTime(){
 showTime();
 
 setInterval(showTime, 1000);
+
+let date = document.getElementById("date");
+let nowdate = new Date();
+ let day = nowdate.getDate();
+ let month = nowdate.getMonth();
+ let year = nowdate.getFullYear();
+ if(day<10){
+    day = "0"+day
+ }
+ if(month<10){
+    month = "0"+month
+
+ }
+ 
+
+ date.innerHTML = day + ":" + month + ":" + year ;
+
